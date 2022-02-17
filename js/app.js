@@ -13,10 +13,8 @@ document.getElementById("Calculate-btn").addEventListener("click", function () {
         document.getElementById("total-expenses").innerText = total;
         const income = document.getElementById("income").value;
         const balance = document.getElementById("balance").innerText = income - total;
-        balance = "";
+
     }
-
-
 
     else {
         alert("Enter Type Number or Possitive Number")
@@ -24,6 +22,31 @@ document.getElementById("Calculate-btn").addEventListener("click", function () {
     }
 
 
+})
+//   bounus part
+
+document.getElementById("save-btn").addEventListener("click", function () {
+
+    const income = document.getElementById("income").value;
+    const saveInput = document.getElementById("save-input").value;
+
+    const savingAmount = (income * saveInput) / 100;
+    const saveTotal = document.getElementById("saving-amount").innerText = savingAmount
+
+    const balance = document.getElementById("balance").innerText;
+
+    const remainingBalance = document.getElementById("remaining-balance").innerText = parseFloat(balance) - parseFloat(saveTotal);
+
+
+
+
+
+
+
+
 
 
 })
+
+
+
