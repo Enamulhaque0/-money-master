@@ -23,9 +23,12 @@ document.getElementById("Calculate-btn").addEventListener("click", function () {
 
 
 })
-//   bounus part
+//   bounus part................................................................
 
 document.getElementById("save-btn").addEventListener("click", function () {
+
+
+
 
     const income = document.getElementById("income").value;
     const saveInput = document.getElementById("save-input").value;
@@ -36,7 +39,6 @@ document.getElementById("save-btn").addEventListener("click", function () {
     const balance = document.getElementById("balance").innerText;
 
     const remainingBalance = document.getElementById("remaining-balance").innerText = parseFloat(balance) - parseFloat(saveTotal);
-
 
 
 
